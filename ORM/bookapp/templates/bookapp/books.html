@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+</head>
+<body style="font-family: Arial; text-align: center;">
+    <h1>Books Available</h1>
+    <ul>
+        {% for book in books %}
+            <li>{{ book.title }} by {{ book.author }} ({{ book.published_date }})</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/form/">Go to User Form</a>
+</body>
+</html>
